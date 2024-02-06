@@ -1,0 +1,12 @@
+react
+
+New project
+npx create-react-app nom_projet
+
+
+Pour lancer mon projet depuis /memo
+npm start index.js
+
+
+requête base de données :
+axios.get récuperation bdd 

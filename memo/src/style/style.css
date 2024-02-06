@@ -1,0 +1,587 @@
+@font-face {
+    font-family: 'Marianne';
+    src: url('font/Marianne-Medium.woff') format('woff'),
+         url('font/Marianne-Medium.woff2') format('woff2');
+    /* Ajoutez d'autres formats si nécessaire */
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+/*Loading page*/
+.LoadingLogo{
+    margin-top: 35vh;
+    margin-left: 37.5vw;
+    width: 25vw;
+}
+.LoadingTitle{
+    color: #f0f0f0;
+    font-family: 'Titan One', sans-serif;
+    font-weight: 100;
+    margin-left: 37vw;
+    font-size: 2em;
+}
+.FaitPar{
+    margin-top: 25vh;
+    text-align: center;
+}
+.SquaredIndustries{
+    color: #ffccaa;
+}
+
+body{
+    background-color: #202020;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    font-family: 'Marianne', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none; /* Safari et Chrome */
+ 
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #f0f0f0;
+}
+
+ul{
+    background-color: #202020;
+    list-style: none;
+    display: flex;
+    gap: 7vw;
+    margin-left: -5vw;
+    flex-direction: row;
+    height: 12vh;
+}
+li{
+    padding-top: 1.5vh;
+}
+nav{
+    color: #f0f0f0;
+    position: fixed;    
+    width: 100vw;
+    bottom: -3vh;
+    z-index: 1;
+}
+.titrePage{
+    color: #f0f0f0;
+    height: 4vh;
+    margin-top: 1.4vh;
+    margin-left: 2vw;
+}
+.titrePageprofil{
+    color: #f0f0f0;
+    height: 3vh;
+    margin-top: 0.75vh;
+    margin-left: 4vw;
+}
+.logo{
+    padding-top: 0.750vh;
+    height: 5vh;
+}
+.iconeProfile{
+    padding-top: 1vh;
+}
+h2{
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 0.6vh;
+    color: #f0f0f0;
+}
+.Frame{
+    height: 40vh;
+    background-color: #707070;    
+}
+.topFrame{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+.More{
+    margin-left: 50vw;
+}
+.container-react{
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+.happy{
+    height: 5vh;
+}
+.commentaire{
+    height: 5vh;
+    margin-left: 3vw;
+}
+.upper_container{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    gap: 65vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 5vh;
+}
+.rectangle {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vh;
+    width: 150px; /* Ajustez la largeur selon vos besoins */
+    height: 100px; /* Ajustez la hauteur selon vos besoins */
+    background-color: #707070; /* Couleur de fond du rectangle */
+    transform: skew(-20deg); /* Applique une inclinaison de -20 degrés (peut être ajusté) */
+}
+
+.rectangleUserPic {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    width: 40px; 
+    height: 30px; 
+    background-color: #707070; 
+    transform: skew(-20deg); 
+}
+
+.SuggestFriend{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-snap-type: x mandatory; 
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+.SuggestFriend::-webkit-scrollbar {
+display: none; /* Safari et Chrome */
+}
+
+/*Page Messagerie*/
+.container-navbarup{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+.inputSearchMessage{
+    color: #202020;
+    outline: none;
+    background-color: #707070;
+    border-radius: 20px;
+    margin-left: 19vw;
+    margin-top: 2.75vh;
+    padding-left: 2vw;
+    width: 60vw;
+    height: 3vh;
+    border: #707070;
+}
+.inputSearchTrend{
+    color: #202020;
+    outline: none;
+    background-color: #707070;
+    border-radius: 20px;
+    margin-left: 19vw;
+    margin-top: 2.75vh;
+    padding-left: 2vw;
+    width: 60vw;
+    height: 3vh;
+    border: #707070;
+}
+.inputSearchMessage::placeholder{
+    color: #202020;
+}
+.inputSearchTrend::placeholder{
+    color: #202020;
+}
+.rectangleUserPicMessage {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    width: 100px; 
+    height: 75px; 
+    background-color: #707070; 
+    transform: skew(-20deg); 
+}
+.informationEnvoie{
+    color: #707070;
+}
+.message-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18vw;
+    margin-top: 5vh;
+    z-index: -1;
+}
+.infoPersoMsg{
+    margin-left: 6vw;
+    margin-top: 1.5vh;
+}
+/*Page Profil*/
+.container-navbarupProfil{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6vh;
+    margin-left: 6vh;
+}
+.AccountInfos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+.AccountInfosContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+    margin-top: 2vh;
+    text-align: center;
+    border-top: solid #ffccaa;
+    width: 70vw;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+    border-bottom: solid #f0f0f0;
+}
+.NumberFrameInfos{
+    margin-top: -2vh;
+}
+.NumberFansInfos{
+    margin-left: 15vw;
+    margin-top: -2vh;
+}
+.rectangleprofilePic{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    width: 100px; 
+    height: 100px; 
+    background-color: #707070; 
+    transform: skew(-20deg); 
+    margin-right: 5vw;
+    margin-left: 20vw;
+}
+.quote{
+    color: #707070;
+    font-size: 0.8em;
+}
+.topProfile{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    margin-left: 1.5vw;
+    width: 90vw;
+}
+button{
+    color: #202020;
+}
+.modifyContent{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 17vw;
+    width: 30vw; 
+    height: 3.25vh; 
+    border: none;
+    background-color: #8EA2C6; 
+    transform: skew(-20deg); 
+    margin-right: 5vw;
+}
+.AddContent{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 2vw;
+    width: 30vw; 
+    height: 3.25vh; 
+    border: none;
+    background-color: #707070; 
+    transform: skew(-20deg); 
+    margin-right: 5vw;
+}
+.AddContent:hover{
+    background-color: #8EA2C6;
+}
+.modifyContent:hover{
+    background-color: #707070;
+}
+.FrameProfile{
+    width: 10em; 
+    height: 10em; 
+    border: none;
+    background-color: #707070; 
+}
+.dateFrame{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.Frameexposition{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
+.Frameexposition-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Page de Recherche*/
+.titreSearchPage{
+    color: #ffccaa;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    font-size: 1.25em;
+}
+.Trendexposition{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vh;
+}
+.Trendexposition-row{
+    display: flex;
+    flex-direction: row;
+}
+.TrendExpose{
+    width: 6em; 
+    height: 6em; 
+    border: none;
+    background-color: #707070; 
+}
+.domainTitle{
+    color: #f0f0f0;
+    margin-left: 7vw;
+    margin-top: 5vh;
+}
+/*Page Settings*/
+.titreSettings{
+    color: #707070;
+    font-size: 0.75em;
+    border-top: solid #404040;
+    padding-top: 2vh;
+    padding-left: 5vw;
+}
+.textSetting{
+    font-size: 1em;
+    padding-left: 5vw;
+}
+.containerSetting{
+    height: 138vh;
+}
+/*Page de Connexion*/
+.Connexion-container{
+    border-radius: 15px;
+    border: solid 1px #404040;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+}
+.FormTitle{
+    color: #ffccaa;
+    font-family:Titan One,serif;
+    font-size: 1.5em;
+}
+label{
+    color: #f0f0f0;
+    font-size: 1em;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+}
+.inputform{
+    font-size: 0.7em;
+    width: 50vw;
+    height: 3vh;
+    background-color: #a0a0a0;
+    outline: none;
+    border: none;
+}
+.inputform::placeholder{
+    color: #505050;
+}
+.forgotPsswrd{
+    font-size: 0.7em;
+    margin-left: 20vw;
+    color: #8EA2C6;
+}
+.BoutonConnexion{
+    margin-top: 10vh;
+    width: 40vw;
+    height: 3vh;
+    background-color: #ffccaa;
+    border-style: none;
+    transform: skew(-20deg);
+}
+.BoutonRegister{
+    margin-top: 5vh;
+    width: 40vw;
+    height: 3vh;
+    background-color: #ffccaa;
+    border-style: none;
+    transform: skew(-20deg);
+}
+.Register-container{
+    border-radius: 15px;
+    border: solid 1px #404040;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width : 600px) {
+    .pages{
+        margin-left: 5vw;
+    }
+    ul{ 
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 0;
+        height: 100vh;
+        width: 5vw;
+        gap: 7vh;
+        color: red;
+    }
+    li{
+        padding-top: 5vh;
+        padding-left:0vw;
+    }
+    nav{
+        margin: 0 auto;
+        position: fixed; 
+        top: 0;
+        z-index: 2;
+    }
+    .upper_container{
+        width: 90vw;
+        gap: 60vw;
+        margin-left: 7vw;
+    }
+    .pcVersionHome{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 0;
+        width: 90vw;
+        margin-left: 10vw;
+    }
+    .rectangle {
+        width: 250px; /* Ajustez la largeur selon vos besoins */
+        height: 175px; /* Ajustez la hauteur selon vos besoins */
+    }
+    .FrameMargin{
+        width: 40vw;
+        margin-right: 10vw;
+    }
+    .carousel{
+        z-index: 3;
+        margin-right: 20vw;
+    }
+    .More{
+        margin-left: 20vw;
+    }
+    .container-react{
+        margin-left: 3vw;
+        margin-top: 1vh;
+    }
+    .SuggestFriend{
+        display: flex;
+        flex-direction: column;
+        scroll-snap-type: y mandatory;
+        white-space: nowrap; 
+        margin-top: 10vh;
+        overflow-y: scroll;  }
+        /*Search Page*/
+    .TrendExpose{
+        width: 20vw;
+        height: 40vh;
+    }
+    .page-container{
+        margin-left: 15vw;
+    }
+    .inputSearchTrend{
+        width: 40vw;
+        margin-left: 10vw;
+    }
+    /*Message Page Responsive*/
+    .inputSearchMessage{
+        width: 40vw;
+        margin-left: 30vw;
+        margin-bottom: 10vh;
+    }
+    .message-container{
+        margin-left: 20vw;
+        width: 55vw;
+        font-size: 1.3em;
+        border-bottom: #404040 solid 1px;
+    }
+    .rectangleUserPicMessage{
+        width: 15vw;
+        height: 10vw;
+    }
+    /*ProfilePage*/
+    .AccountInfos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+    }
+    .AccountInfosContainer{
+        padding-left: 10vw;
+        width: 60vw;
+        margin-top: 10vh;
+    }
+    .rectangleprofilePic{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 1vw;
+        width: 15vw; 
+        height: 20vh; 
+        background-color: #707070; 
+        transform: skew(-20deg); 
+        margin-right: 5vw;
+        margin-left: 20vw;
+    }
+    .profileContent{
+        margin-left: 26vw;
+        font-size: 1.2em;
+    }
+    .quote{
+        color: #707070;
+        font-size: 0.8em;
+    }
+    .topProfile{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+        margin-left: 1.5vw;
+        width: 90vw;
+    }
+    button{
+        color: #202020;
+    }
+    .FrameProfile{
+        width: 15vw; 
+        height: 30vh; 
+        border: none;
+        background-color: #707070; 
+        margin-left: 5vw;
+    }
+    .dateFrame{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .Frameexposition{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-left: 3vh;
+    }
+    .Frameexposition-row{
+        display: flex;
+        flex-direction: row;
+    }
+} 
